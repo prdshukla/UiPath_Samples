@@ -1,0 +1,57 @@
+{
+  "name": "HandwrittenExtraction",
+  "description": "Handwritten data extraction using UiPath's own OCR",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.DocumentUnderstanding.ML.Activities": "[1.4.1-preview]",
+    "UiPath.Excel.Activities": "[2.9.2-preview]",
+    "UiPath.IntelligentOCR.Activities": "[4.9.0-preview]",
+    "UiPath.Mail.Activities": "[1.9.2-preview]",
+    "UiPath.System.Activities": "[20.10.0-preview]",
+    "UiPath.UIAutomation.Activities": "[20.10.0-preview]",
+    "UiPathTeam.AttendedRobotStatus.Activities": "[1.0.30]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "20.10.0.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "isPausable": true,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "modernBehavior": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "edeeb527-8627-4433-9e9c-5a9130a700f9",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {}
+}

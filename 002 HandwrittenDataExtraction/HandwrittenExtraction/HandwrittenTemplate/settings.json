@@ -1,0 +1,1 @@
+{"DocTypeSettings":[{"DocumentTypeId":"Heath.Insurance.ClaimForm","SignatureFields":[],"HandwritingFields":[{"FieldId":"Heath.Insurance.ClaimForm.PolicyNumber"},{"FieldId":"Heath.Insurance.ClaimForm.CertificateNumber"},{"FieldId":"Heath.Insurance.ClaimForm.Name"}],"BooleanSynonymsForYes":[],"BooleanSynonymsForNo":[]}]}

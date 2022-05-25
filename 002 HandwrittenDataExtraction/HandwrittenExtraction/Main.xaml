@@ -1,0 +1,197 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="961,3104" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:aa="clr-namespace:AttendedRobotStatus.Activities;assembly=AttendedRobotStatus" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/intelligentocr" xmlns:p1="http://schemas.uipath.com/workflow/activities/ocr" xmlns:p2="http://schemas.uipath.com/workflow/activities/intelligentocr/extraction" xmlns:p3="http://schemas.uipath.com/workflow/activities/document-processing-contracts/results" xmlns:p4="http://schemas.uipath.com/workflow/activities/document-processing-contracts/dom" xmlns:p5="http://schemas.uipath.com/workflow/activities/document-processing-contracts/extraction" xmlns:p6="http://schemas.uipath.com/workflow/activities/document-processing-contracts/taxonomy" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="86">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.IntelligentOCR.Activities.TaxonomyManagement</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Taxonomy</x:String>
+      <x:String>UiPath.IntelligentOCR.Activities.Digitization</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Dom</x:String>
+      <x:String>UiPath.IntelligentOCR.Activities.DataExtraction</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Results</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.DataExtraction</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts</x:String>
+      <x:String>UiPath.IntelligentOCR.Activities.ValidationStation</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>AttendedRobotStatus.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="50">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentUnderstanding.ML.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentProcessing.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices.RuntimeInformation</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>AttendedRobotStatus</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="598,3039" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="p6:DocumentTaxonomy" Name="Taxonomy" />
+      <Variable x:TypeArguments="x:String" Default="D:\1 UiPath\006 HandwrittenDataExtraction\HandwrittenExtraction\Data\Input\IMG_20210317_0001.pdf" Name="DocumentPath" />
+      <Variable x:TypeArguments="x:String" Name="DocumentText" />
+      <Variable x:TypeArguments="p4:Document" Name="DOM" />
+      <Variable x:TypeArguments="p3:ExtractionResult" Name="ExtractionResults" />
+      <Variable x:TypeArguments="p3:ExtractionResult" Name="ValidationResults" />
+      <Variable x:TypeArguments="sd1:DataSet" Name="dsExtractedData" />
+      <Variable x:TypeArguments="x:String" Default="Data\Input\" Name="stringDocPath" />
+      <Variable x:TypeArguments="sd1:DataTable" Name="dtFinalResult" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:BuildDataTable DataTable="[dtFinalResult]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="556,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Full_x0020_Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Date_x0020_of_x0020_Birth&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;10&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Social_x0020_Security_x0020_Number&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;11&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;USCitizen&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Signature&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="556,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Getting ready...&quot;]" />
+    <aa:AttendedRobotStatus DisplayName="Attended Robot Status" ErrorLvl="False" sap:VirtualizedContainerService.HintSize="556,79" sap2010:WorkflowViewState.IdRef="AttendedRobotStatus_1" InfoLvl="False" Message="Getting ready..." WarnLvl="False" />
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="556,2250" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[Directory.GetFiles(stringDocPath)]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="x:String">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:String" Name="filePath" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="520,2116" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <p:LoadTaxonomy DisplayName="Load Taxonomy" sap:VirtualizedContainerService.HintSize="478,103" sap2010:WorkflowViewState.IdRef="LoadTaxonomy_1" Taxonomy="[Taxonomy]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Initiating digitization process for file &quot; + mid(Filepath,12,len(Filepath)-11)]" />
+            <aa:AttendedRobotStatus DisplayName="Attended Robot Status" ErrorLvl="False" sap:VirtualizedContainerService.HintSize="478,22" sap2010:WorkflowViewState.IdRef="AttendedRobotStatus_2" InfoLvl="False" Message="[&quot;Initiating digitization process for file &quot; + mid(Filepath,12,len(Filepath)-11)]" WarnLvl="False" />
+            <p:DigitizeDocument DegreeOfParallelism="-1" DisplayName="Digitize Document" DocumentObjectModel="[DOM]" DocumentPath="[filepath]" DocumentText="[DocumentText]" ForceApplyOCR="False" sap:VirtualizedContainerService.HintSize="478,293" sap2010:WorkflowViewState.IdRef="DigitizeDocument_1">
+              <p:DigitizeDocument.OCREngine>
+                <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+                  <ActivityFunc.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                  </ActivityFunc.Argument>
+                  <p1:UiPathDocumentOCR Endpoint="{x:Null}" Output="{x:Null}" Text="{x:Null}" ApiKey="noMTwhHAnweR8ZG9XIS3kgoSsFyMRCj4kzhEidOWpSmChsYeT0huUyJAnngGvS03" ComputeSkewAngle="False" DisplayName="UiPath Document OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="312,22" sap2010:WorkflowViewState.IdRef="UiPathDocumentOCR_1" Image="[Image]" Language="auto" Profile="Scan" Scale="1" />
+                </ActivityFunc>
+              </p:DigitizeDocument.OCREngine>
+            </p:DigitizeDocument>
+            <p2:DataExtractionScope ClassificationResult="{x:Null}" DisplayName="Data Extraction Scope" DocumentObjectModel="[DOM]" DocumentPath="[filepath]" DocumentText="[DocumentText]" DocumentTypeId="HR.NewEmployee.EmployeeOnboarding" ExtractionResult="[ExtractionResults]" FormatValuesIfPossible="True" sap:VirtualizedContainerService.HintSize="478,482" sap2010:WorkflowViewState.IdRef="DataExtractionScope_1" Taxonomy="[Taxonomy]" TaxonomyConfiguration="{}{&quot;TaxonomyMappings&quot;:{&quot;UI12dcbc3cba9749d88e433be139b88652&quot;:{&quot;DocumentTypeMappings&quot;:{&quot;Heath.Insurance.ClaimForm&quot;:{&quot;FieldMappings&quot;:{&quot;Heath.Insurance.ClaimForm.PolicyNumber&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;Heath.Insurance.ClaimForm.PolicyNumber&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;Heath.Insurance.ClaimForm.CertificateNumber&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;Heath.Insurance.ClaimForm.CertificateNumber&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;Heath.Insurance.ClaimForm.Name&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;Heath.Insurance.ClaimForm.Name&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false}},&quot;ExtractorDocumentTypeId&quot;:null},&quot;HR.NewEmployee.EmployeeOnboarding&quot;:{&quot;FieldMappings&quot;:{&quot;HR.NewEmployee.EmployeeOnboarding.FullName&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;HR.NewEmployee.EmployeeOnboarding.FullName&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;HR.NewEmployee.EmployeeOnboarding.DateofBirth&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;HR.NewEmployee.EmployeeOnboarding.DateofBirth&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;HR.NewEmployee.EmployeeOnboarding.SocialSecurityNumber&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;HR.NewEmployee.EmployeeOnboarding.SocialSecurityNumber&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;HR.NewEmployee.EmployeeOnboarding.USCitizen&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;HR.NewEmployee.EmployeeOnboarding.USCitizen&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;HR.NewEmployee.EmployeeOnboarding.Signature&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;HR.NewEmployee.EmployeeOnboarding.Signature&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true}},&quot;ExtractorDocumentTypeId&quot;:null}}}},&quot;ExtractorMinimumConfidence&quot;:{&quot;UI12dcbc3cba9749d88e433be139b88652&quot;:&quot;0&quot;},&quot;ExtractorsAliases&quot;:{},&quot;DocumentTypeOptionsByExtractor&quot;:{&quot;UI12dcbc3cba9749d88e433be139b88652&quot;:[]}}">
+              <p2:DataExtractionScope.Extractors>
+                <p2:IntelligentFormExtractor SerializedSignatureFields="{x:Null}" ApiKey="noMTwhHAnweR8ZG9XIS3kgoSsFyMRCj4kzhEidOWpSmChsYeT0huUyJAnngGvS03" DisplayName="Intelligent Form Extractor" Endpoint="https://intelligentforms.uipath.com/" sap:VirtualizedContainerService.HintSize="234,161" sap2010:WorkflowViewState.IdRef="IntelligentFormExtractor_1" MinOverlapPercentage="65" PersistenceId="UI12dcbc3cba9749d88e433be139b88652" SerializedSettings="{}{&quot;DocTypeSettings&quot;:[{&quot;DocumentTypeId&quot;:&quot;Heath.Insurance.ClaimForm&quot;,&quot;SignatureFields&quot;:[],&quot;HandwritingFields&quot;:[{&quot;FieldId&quot;:&quot;Heath.Insurance.ClaimForm.PolicyNumber&quot;},{&quot;FieldId&quot;:&quot;Heath.Insurance.ClaimForm.CertificateNumber&quot;},{&quot;FieldId&quot;:&quot;Heath.Insurance.ClaimForm.Name&quot;}],&quot;BooleanSynonymsForYes&quot;:[],&quot;BooleanSynonymsForNo&quot;:[]},{&quot;DocumentTypeId&quot;:&quot;HR.NewEmployee.EmployeeOnboarding&quot;,&quot;SignatureFields&quot;:[{&quot;FieldId&quot;:&quot;HR.NewEmployee.EmployeeOnboarding.Signature&quot;}],&quot;HandwritingFields&quot;:[{&quot;FieldId&quot;:&quot;HR.NewEmployee.EmployeeOnboarding.FullName&quot;},{&quot;FieldId&quot;:&quot;HR.NewEmployee.EmployeeOnboarding.DateofBirth&quot;},{&quot;FieldId&quot;:&quot;HR.NewEmployee.EmployeeOnboarding.SocialSecurityNumber&quot;},{&quot;FieldId&quot;:&quot;HR.NewEmployee.EmployeeOnboarding.OptionalText&quot;},{&quot;FieldId&quot;:&quot;HR.NewEmployee.EmployeeOnboarding.Signature&quot;}],&quot;BooleanSynonymsForYes&quot;:[&quot;Yes&quot;,&quot;X&quot;,&quot;V&quot;,&quot;✓&quot;,&quot;✔&quot;],&quot;BooleanSynonymsForNo&quot;:[]}]}" SerializedTemplates="[{&quot;DocumentTypeId&quot;:&quot;HR.NewEmployee.EmployeeOnboarding&quot;,&quot;FormId&quot;:&quot;771e98f2&quot;,&quot;FormName&quot;:&quot;Template001&quot;,&quot;OriginalFileExtension&quot;:&quot;pdf&quot;,&quot;Pages&quot;:[{&quot;Page&quot;:0,&quot;Size&quot;:[0.0,0.0,612.0,792.0],&quot;SkewAngle&quot;:-0.1201,&quot;Evidence&quot;:[{&quot;Text&quot;:&quot;☒&quot;,&quot;Box&quot;:[18.7644,153.2453,13.1895,13.5911]},{&quot;Text&quot;:&quot;claration&quot;,&quot;Box&quot;:[18.5,171.7651,79.0257,14.1224]},{&quot;Text&quot;:&quot;Federal&quot;,&quot;Box&quot;:[18.7397,286.2246,62.4852,13.6071]},{&quot;Text&quot;:&quot;Employment*&quot;,&quot;Box&quot;:[18.6406,355.5693,114.3485,17.5636]},{&quot;Text&quot;:&quot;GENERAL&quot;,&quot;Box&quot;:[53.9489,23.1294,58.3765,9.0374]},{&quot;Text&quot;:&quot;INFORMATION&quot;,&quot;Box&quot;:[53.8399,85.2883,83.8186,9.5673]}],&quot;Fields&quot;:[{&quot;Field&quot;:&quot;HR.NewEmployee.EmployeeOnboarding.FullName&quot;,&quot;Box&quot;:[89.561,50.7512,537.3659,20.8976]},{&quot;Field&quot;:&quot;HR.NewEmployee.EmployeeOnboarding.DateofBirth&quot;,&quot;Box&quot;:[163.2,431.8829,146.2829,22.8878]},{&quot;Field&quot;:&quot;HR.NewEmployee.EmployeeOnboarding.SocialSecurityNumber&quot;,&quot;Box&quot;:[127.3756,46.7707,149.2683,19.9024]},{&quot;Field&quot;:&quot;HR.NewEmployee.EmployeeOnboarding.USCitizen&quot;,&quot;Box&quot;:[161.2098,21.8927,18.9073,21.8927]}],&quot;Tables&quot;:[]},{&quot;Page&quot;:1,&quot;Size&quot;:[0.0,0.0,612.0,792.0],&quot;SkewAngle&quot;:-0.0621,&quot;Evidence&quot;:[{&quot;Text&quot;:&quot;☒&quot;,&quot;Box&quot;:[19.0178,153.4989,13.1622,13.5644]},{&quot;Text&quot;:&quot;claration&quot;,&quot;Box&quot;:[18.9529,171.9643,78.5889,13.7854]},{&quot;Text&quot;:&quot;Federal&quot;,&quot;Box&quot;:[19.0776,286.5094,61.9636,13.5264]},{&quot;Text&quot;:&quot;Employment*&quot;,&quot;Box&quot;:[18.6704,355.6226,113.8172,17.6672]},{&quot;Text&quot;:&quot;Additional&quot;,&quot;Box&quot;:[55.9953,22.7179,58.5924,9.4351]},{&quot;Text&quot;:&quot;Questions&quot;,&quot;Box&quot;:[56.3018,85.5976,57.8728,9.6765]}],&quot;Fields&quot;:[{&quot;Field&quot;:&quot;HR.NewEmployee.EmployeeOnboarding.Signature&quot;,&quot;Box&quot;:[539.4805,161.2098,123.3951,23.8829]}],&quot;Tables&quot;:[]}]},{&quot;DocumentTypeId&quot;:&quot;HR.NewEmployee.EmployeeOnboarding&quot;,&quot;FormId&quot;:&quot;35b68b4f&quot;,&quot;FormName&quot;:&quot;Template01&quot;,&quot;OriginalFileExtension&quot;:&quot;pdf&quot;,&quot;Pages&quot;:[{&quot;Page&quot;:0,&quot;Size&quot;:[0.0,0.0,612.0,792.0],&quot;SkewAngle&quot;:-0.1201,&quot;Evidence&quot;:[{&quot;Text&quot;:&quot;☒&quot;,&quot;Box&quot;:[18.7644,153.2453,13.1895,13.5911]},{&quot;Text&quot;:&quot;eclarati&quot;,&quot;Box&quot;:[18.7835,166.3519,61.8602,13.4907]},{&quot;Text&quot;:&quot;Federal&quot;,&quot;Box&quot;:[18.8592,286.3448,62.3621,13.4781]},{&quot;Text&quot;:&quot;Employment&quot;,&quot;Box&quot;:[18.8787,355.5848,106.8814,17.2188]},{&quot;Text&quot;:&quot;GENERAL&quot;,&quot;Box&quot;:[53.9488,23.2491,58.2541,9.0685]},{&quot;Text&quot;:&quot;INFORMATION&quot;,&quot;Box&quot;:[53.8784,85.4099,83.6955,9.3944]}],&quot;Fields&quot;:[{&quot;Field&quot;:&quot;HR.NewEmployee.EmployeeOnboarding.FullName&quot;,&quot;Box&quot;:[89.561,48.761,543.3366,22.8878]},{&quot;Field&quot;:&quot;HR.NewEmployee.EmployeeOnboarding.DateofBirth&quot;,&quot;Box&quot;:[164.1951,431.8829,156.2341,21.8927]},{&quot;Field&quot;:&quot;HR.NewEmployee.EmployeeOnboarding.SocialSecurityNumber&quot;,&quot;Box&quot;:[125.3854,47.7659,148.2732,19.9024]},{&quot;Field&quot;:&quot;HR.NewEmployee.EmployeeOnboarding.USCitizen&quot;,&quot;Box&quot;:[169.1707,24.878,13.9317,12.9366]}],&quot;Tables&quot;:[]},{&quot;Page&quot;:1,&quot;Size&quot;:[0.0,0.0,612.0,792.0],&quot;SkewAngle&quot;:-0.0621,&quot;Evidence&quot;:[{&quot;Text&quot;:&quot;☒&quot;,&quot;Box&quot;:[19.0178,153.4989,13.1622,13.5644]},{&quot;Text&quot;:&quot;eclarati&quot;,&quot;Box&quot;:[19.2159,166.7534,61.713,13.372]},{&quot;Text&quot;:&quot;Federal&quot;,&quot;Box&quot;:[19.1973,286.5095,61.9655,13.3896]},{&quot;Text&quot;:&quot;Additional&quot;,&quot;Box&quot;:[56.3018,23.0809,58.1062,9.1263]},{&quot;Text&quot;:&quot;Questions&quot;,&quot;Box&quot;:[56.4218,85.5977,57.8648,9.5084]}],&quot;Fields&quot;:[{&quot;Field&quot;:&quot;HR.NewEmployee.EmployeeOnboarding.Signature&quot;,&quot;Box&quot;:[542.4659,135.3366,203.0049,23.8829]}],&quot;Tables&quot;:[]}]}]">
+                  <p2:IntelligentFormExtractor.DocumentBounds>
+                    <InArgument x:TypeArguments="p3:ResultsDocumentBounds">
+                      <DelegateArgumentValue x:TypeArguments="p3:ResultsDocumentBounds">
+                        <DelegateInArgument x:TypeArguments="p3:ResultsDocumentBounds" Name="DocumentBounds" />
+                      </DelegateArgumentValue>
+                    </InArgument>
+                  </p2:IntelligentFormExtractor.DocumentBounds>
+                  <p2:IntelligentFormExtractor.DocumentObjectModel>
+                    <InArgument x:TypeArguments="p4:Document">
+                      <DelegateArgumentValue x:TypeArguments="p4:Document">
+                        <DelegateInArgument x:TypeArguments="p4:Document" Name="DocumentObjectModel" />
+                      </DelegateArgumentValue>
+                    </InArgument>
+                  </p2:IntelligentFormExtractor.DocumentObjectModel>
+                  <p2:IntelligentFormExtractor.DocumentPath>
+                    <InArgument x:TypeArguments="x:String">
+                      <DelegateArgumentValue x:TypeArguments="x:String">
+                        <DelegateInArgument x:TypeArguments="x:String" Name="DocumentPath" />
+                      </DelegateArgumentValue>
+                    </InArgument>
+                  </p2:IntelligentFormExtractor.DocumentPath>
+                  <p2:IntelligentFormExtractor.DocumentText>
+                    <InArgument x:TypeArguments="x:String">
+                      <DelegateArgumentValue x:TypeArguments="x:String">
+                        <DelegateInArgument x:TypeArguments="x:String" Name="DocumentText" />
+                      </DelegateArgumentValue>
+                    </InArgument>
+                  </p2:IntelligentFormExtractor.DocumentText>
+                  <p2:IntelligentFormExtractor.ExtractorDocumentType>
+                    <InArgument x:TypeArguments="p5:ExtractorDocumentType">
+                      <DelegateArgumentValue x:TypeArguments="p5:ExtractorDocumentType">
+                        <DelegateInArgument x:TypeArguments="p5:ExtractorDocumentType" Name="ExtractorDocumentType" />
+                      </DelegateArgumentValue>
+                    </InArgument>
+                  </p2:IntelligentFormExtractor.ExtractorDocumentType>
+                  <p2:IntelligentFormExtractor.ExtractorResult>
+                    <OutArgument x:TypeArguments="p5:ExtractorResult">
+                      <DelegateArgumentReference x:TypeArguments="p5:ExtractorResult">
+                        <DelegateOutArgument x:TypeArguments="p5:ExtractorResult" Name="ExtractorResult" />
+                      </DelegateArgumentReference>
+                    </OutArgument>
+                  </p2:IntelligentFormExtractor.ExtractorResult>
+                </p2:IntelligentFormExtractor>
+              </p2:DataExtractionScope.Extractors>
+            </p2:DataExtractionScope>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Data extraction complete for file &quot; + mid(Filepath,12,len(Filepath)-11)]" />
+            <aa:AttendedRobotStatus DisplayName="Attended Robot Status" ErrorLvl="False" sap:VirtualizedContainerService.HintSize="478,22" sap2010:WorkflowViewState.IdRef="AttendedRobotStatus_3" InfoLvl="False" Message="[&quot;Data extraction complete for file &quot; + mid(Filepath,12,len(Filepath)-11)]" WarnLvl="False" />
+            <p:PresentValidationStation AutomaticExtractionResults="[ExtractionResults]" DisplayName="Present Validation Station" DocumentObjectModel="[DOM]" DocumentPath="[filePath]" DocumentText="[DocumentText]" sap:VirtualizedContainerService.HintSize="478,365" sap2010:WorkflowViewState.IdRef="PresentValidationStation_1" Taxonomy="[Taxonomy]" ValidatedExtractionResults="[ValidationResults]" />
+            <p2:ExportExtractionResults DataSet="[dsExtractedData]" DisplayName="Export Extraction Results" ExtractionResult="[ValidationResults]" sap:VirtualizedContainerService.HintSize="478,173" sap2010:WorkflowViewState.IdRef="ExportExtractionResults_1" IncludeConfidence="False" />
+            <ui:MergeDataTable Destination="[dtFinalResult]" DisplayName="Merge Data Table" sap:VirtualizedContainerService.HintSize="478,22" sap2010:WorkflowViewState.IdRef="MergeDataTable_2" MissingSchemaAction="Add" Source="[dsExtractedData.Tables(0)]" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="556,91" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Data formatted and compiled for final output.&quot;]" />
+    <aa:AttendedRobotStatus DisplayName="Attended Robot Status" ErrorLvl="False" sap:VirtualizedContainerService.HintSize="556,22" sap2010:WorkflowViewState.IdRef="AttendedRobotStatus_4" InfoLvl="False" Message="Data formatted and compiled for final output." WarnLvl="False" />
+    <ui:WriteRange AddHeaders="True" DataTable="[dtFinalResult]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="556,115" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" StartingCell="A1" WorkbookPath="Data\Output\HandwrittenData.xlsx" />
+  </Sequence>
+</Activity>
