@@ -1,0 +1,6 @@
+﻿caller,business_service,category,subcategory,contact_type,configuration_item,impact,urgency,priority,assignment_group,assigned_to,short_description,description,Ticket_type,Number
+Tim Smith,Client Services,Application,IBM,*ASSET-IBM,Email,2,2,3,CAB Managers,David C,From today morning I am not able to login to SAP,I require access to Cognos so I can run transaction 0K4 - Freight report,Request,
+David Jacobs,Client Services,Network,Antivirus,*ASSET-McAfee,Email,2,2,3,Network CAB Managers,Fred Luddy,"From today morning I am not able to login to my laptop, it keeps logging me out",It seems the antivirus is scanning my PC continuously,incident,
+Tina White,Client Services,Application,IBM,*ASSET-IBM,Email,2,2,3,CAB Managers,David C,From today morning I am not able to login to SAP,I require access to Cognos so I can run transaction 0K4 - Freight report,Request,
+Lindon Woo,Client Services,Network,Antivirus,*ASSET-McAfee,Email,2,2,3,Network CAB Managers,Fred Luddy,"From today morning I am not able to login to my laptop, it keeps logging me out",It seems the antivirus is scanning my PC continuously,incident,
+Patrick Jones,Client Services,Application,IBM,*ASSET-IBM,Email,2,2,3,CAB Managers,David C,From today morning I am not able to login to SAP,I require access to Cognos so I can run transaction 0K4 - Freight report,Request,
