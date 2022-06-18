@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "resources": [
+    {
+      "resource": "asset",
+      "metadata": {
+        "Value": {
+          "defaultValue": "in_Credential",
+          "isExpression": true
+        },
+        "FolderPath": {
+          "isExpression": true
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "Value": {
+          "defaultValue": "Asset.value(0).ToString",
+          "isExpression": false
+        },
+        "FolderPath": {
+          "defaultValue": "Asset.value(1).ToString",
+          "isExpression": false
+        }
+      }
+    }
+  ]
+}
