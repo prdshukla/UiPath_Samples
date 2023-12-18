@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1077,1145</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>946,1145</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Main2_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="88">
@@ -111,7 +111,7 @@
         <av:Point x:Key="ShapeLocation">310,32.5</av:Point>
         <x:Double x:Key="StateContainerWidth">659</x:Double>
         <x:Double x:Key="StateContainerHeight">807.04</x:Double>
-        <av:PointCollection x:Key="ConnectorLocation">340,107.5 340,141</av:PointCollection>
+        <av:PointCollection x:Key="ConnectorLocation">340,107.5 340,137.5 342,137.5 342,141</av:PointCollection>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
@@ -659,9 +659,9 @@
           </sap:WorkflowViewStateService.ViewState>
           <Transition.Condition>[Redo]</Transition.Condition>
           <Transition.To>
-            <State x:Name="__ReferenceID2" sap2010:Annotation.AnnotationText="Read configuration file , display the Form and initialize applications used in the process." DisplayName="Initialization" sap:VirtualizedContainerService.HintSize="254,118" sap2010:WorkflowViewState.IdRef="State_2">
+            <State x:Name="__ReferenceID2" sap2010:Annotation.AnnotationText="Read configuration file , display the Form and initialize applications used in the process." DisplayName="Initialization" sap:VirtualizedContainerService.HintSize="730,5380" sap2010:WorkflowViewState.IdRef="State_2">
               <State.Entry>
-                <TryCatch DisplayName="Try initializing settings and applications" sap:VirtualizedContainerService.HintSize="684,4774" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                <TryCatch DisplayName="Try initializing settings and applications" sap:VirtualizedContainerService.HintSize="684,4935" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -669,7 +669,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <TryCatch.Try>
-                    <Sequence DisplayName="Load configurations and open applications" sap:VirtualizedContainerService.HintSize="646,4547" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <Sequence DisplayName="Load configurations and open applications" sap:VirtualizedContainerService.HintSize="646,4708" sap2010:WorkflowViewState.IdRef="Sequence_4">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -677,7 +677,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="604,91" sap2010:WorkflowViewState.IdRef="LogMessage_39" Level="Trace" Message="[&quot;Init started&quot;]" />
-                      <uwa:ProgressWindowClose InterProcessPipeName="{x:Null}" DisplayName="Progress Window Close" sap:VirtualizedContainerService.HintSize="604,22" sap2010:WorkflowViewState.IdRef="ProgressWindowClose_2" WindowId="[ProgressWindowId]">
+                      <uwa:ProgressWindowClose InterProcessPipeName="{x:Null}" DisplayName="Progress Window Close" sap:VirtualizedContainerService.HintSize="604,66" sap2010:WorkflowViewState.IdRef="ProgressWindowClose_2" WindowId="[ProgressWindowId]">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -685,7 +685,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uwa:ProgressWindowClose>
-                      <uwa:ProgressWindowShow ImageSource="{x:Null}" InterProcessPipeName="{x:Null}" BlockUntilWindowIsClosed="False" DisplayInTaskbar="False" DisplayName="Display Progress Window" Height="200" sap:VirtualizedContainerService.HintSize="604,22" sap2010:WorkflowViewState.IdRef="ProgressWindowShow_1" ImageHeight="0" ImageWidth="0" Message="Starting up" MessageFontFamily="Calibri" MessageFontSize="17" MessageStackFontFamily="Calibri" MessageStackFontSize="0" MessageStackShow="False" Position="TopRight" ProgressBarHeight="0" ProgressBarPercentageFontFamily="Calibri" ProgressBarPercentageFontSize="0" ProgressBarPercentageShow="False" Title="Automation Progress" TitleFontFamily="Calibri" TitleFontSize="15" TopMost="True" Width="350" WindowId="[ProgressWindowId]">
+                      <uwa:ProgressWindowShow ImageSource="{x:Null}" InterProcessPipeName="{x:Null}" BlockUntilWindowIsClosed="False" DisplayInTaskbar="False" DisplayName="Display Progress Window" Height="200" sap:VirtualizedContainerService.HintSize="604,66" sap2010:WorkflowViewState.IdRef="ProgressWindowShow_1" ImageHeight="0" ImageWidth="0" Message="Starting up" MessageFontFamily="Calibri" MessageFontSize="17" MessageStackFontFamily="Calibri" MessageStackFontSize="0" MessageStackShow="False" Position="TopRight" ProgressBarHeight="0" ProgressBarPercentageFontFamily="Calibri" ProgressBarPercentageFontSize="0" ProgressBarPercentageShow="False" Title="Automation Progress" TitleFontFamily="Calibri" TitleFontSize="15" TopMost="True" Width="350" WindowId="[ProgressWindowId]">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -750,7 +750,7 @@
                           </Sequence>
                         </If.Then>
                       </If>
-                      <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" Window="{x:Null}" ContinueOnError="True" DisplayName="Minimise UiPath Assistant" sap:VirtualizedContainerService.HintSize="604,22" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="94eecaf2ad5704623a5283d543a7ebcc" Selector="&lt;wnd app='uipath.assistant.exe' omit:cls='Chrome_WidgetWin_1' title='UiPath Assistant' /&gt;" TimeoutMS="100">
+                      <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" Window="{x:Null}" ContinueOnError="True" DisplayName="Minimise UiPath Assistant" sap:VirtualizedContainerService.HintSize="604,51" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="94eecaf2ad5704623a5283d543a7ebcc" Selector="&lt;wnd app='uipath.assistant.exe' omit:cls='Chrome_WidgetWin_1' title='UiPath Assistant' /&gt;" TimeoutMS="100">
                         <ui:WindowScope.Body>
                           <ActivityAction x:TypeArguments="x:Object">
                             <ActivityAction.Argument>
@@ -797,9 +797,9 @@
                           </Sequence>
                         </If.Else>
                       </If>
-                      <If Condition="[Not CancelFormSelected]" sap:VirtualizedContainerService.HintSize="604,2044" sap2010:WorkflowViewState.IdRef="If_15">
+                      <If Condition="[Not CancelFormSelected]" sap:VirtualizedContainerService.HintSize="604,2088" sap2010:WorkflowViewState.IdRef="If_15">
                         <If.Then>
-                          <Sequence DisplayName="Save Config and open applications" sap:VirtualizedContainerService.HintSize="568,1857" sap2010:WorkflowViewState.IdRef="Sequence_52">
+                          <Sequence DisplayName="Save Config and open applications" sap:VirtualizedContainerService.HintSize="568,1901" sap2010:WorkflowViewState.IdRef="Sequence_52">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -865,13 +865,13 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:CommentOut>
-                            <Sequence DisplayName="Start applications (if applicable)" sap:VirtualizedContainerService.HintSize="526,528" sap2010:WorkflowViewState.IdRef="Sequence_51">
+                            <Sequence DisplayName="Start applications (if applicable)" sap:VirtualizedContainerService.HintSize="526,572" sap2010:WorkflowViewState.IdRef="Sequence_51">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <uwa:ProgressWindowChangeMessage InterProcessPipeName="{x:Null}" DisplayName="Progress Window Change Message " sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="ProgressWindowChangeMessage_1" Message="Beginning process" WindowId="[ProgressWindowId]">
+                              <uwa:ProgressWindowChangeMessage InterProcessPipeName="{x:Null}" DisplayName="Progress Window Change Message " sap:VirtualizedContainerService.HintSize="334,66" sap2010:WorkflowViewState.IdRef="ProgressWindowChangeMessage_1" Message="Beginning process" WindowId="[ProgressWindowId]">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -925,9 +925,9 @@
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <av:Point x:Key="ShapeLocation">213,141</av:Point>
-                  <av:Size x:Key="ShapeSize">254,118</av:Size>
+                  <av:Size x:Key="ShapeSize">258,118</av:Size>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  <x:Double x:Key="StateContainerWidth">220</x:Double>
+                  <x:Double x:Key="StateContainerWidth">224</x:Double>
                   <x:Double x:Key="StateContainerHeight">25</x:Double>
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
@@ -938,7 +938,7 @@
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Int32 x:Key="SrcConnectionPointIndex">39</x:Int32>
                       <x:Int32 x:Key="DestConnectionPointIndex">38</x:Int32>
-                      <av:PointCollection x:Key="ConnectorLocation">340,259 340,334</av:PointCollection>
+                      <av:PointCollection x:Key="ConnectorLocation">342,259 342,289 340,289 340,334</av:PointCollection>
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
@@ -984,7 +984,7 @@
                 <Transition DisplayName="System Exception (failed initialization)" sap:VirtualizedContainerService.HintSize="479,678" sap2010:WorkflowViewState.IdRef="Transition_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:PointCollection x:Key="ConnectorLocation">467,205.9 497,205.9 497,706.8 468,706.8</av:PointCollection>
+                      <av:PointCollection x:Key="ConnectorLocation">471,205.9 501,205.9 501,706.8 468,706.8</av:PointCollection>
                       <x:Int32 x:Key="SrcConnectionPointIndex">40</x:Int32>
                       <x:Int32 x:Key="DestConnectionPointIndex">48</x:Int32>
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
